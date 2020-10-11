@@ -1,0 +1,17 @@
+$colors: (
+  'main-grey': #edf2f4,
+  'dark-grey-font': #8d99ae,
+  'footer-color': #0d1b2a,
+  'blue-btn': #778da9
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

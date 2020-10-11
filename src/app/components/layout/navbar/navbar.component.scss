@@ -1,0 +1,17 @@
+@import '../../../extras/index';
+
+nav {
+  padding: 1rem 8rem;
+  background-color: getColor(main-grey);
+  a {
+    color: getColor(dark-grey-font);
+  }
+}
+
+.navbar-brand {
+  font-family: 'Merienda';
+}
+
+.nav-link {
+  font-size: 20px;
+}

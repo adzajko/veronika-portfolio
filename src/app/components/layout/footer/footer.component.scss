@@ -1,0 +1,47 @@
+@import '../../../extras/index';
+
+.footer-content {
+  @extend .flex-column-center;
+  background-color: getColor(footer-color);
+  padding: 3rem;
+  box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.6);
+  a {
+    color: getColor(dark-grey-font);
+    text-decoration: none;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: #f5f5f5;
+  }
+
+  .alternate-email {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .alternate-email::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    background-color: getColor(dark-grey-font);
+    width: 120%;
+    height: 2px;
+  }
+
+  i {
+    margin-right: 16px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    a {
+      font-size: 40px;
+    }
+  }
+}
