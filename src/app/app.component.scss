@@ -1,1 +1,31 @@
 @import './extras/index';
+
+#back-to-top {
+  position: fixed;
+  bottom: 16%;
+  right: 8%;
+  display: block;
+  i.fa {
+    transition: 0.4s ease;
+    cursor: pointer;
+    color: getColor(dark-grey-font);
+    font-size: 45px;
+  }
+  i.fa:hover {
+    animation-fill-mode: both;
+    animation-name: backToTop;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes backToTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}

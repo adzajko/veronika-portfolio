@@ -1,26 +1,26 @@
 <section class="hero-section">
-  <div class="img-container">
+  <div class="img-container" data-aos="fade-in">
     <img src="/assets/png-assets/avatar.png" alt="Veronika Jovanovska Avatar" class="img-fluid">
   </div>
   <div class="info-container">
-    <p class="font-weight-bold"><i class="fas fa-user "></i>Veronika Jovanovska</p>
-    <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i>Skopje, N.Macedonia</p>
-    <p class="font-weight-bold"><i class="fas fa-briefcase"></i>UI / UX Designer</p>
+    <p class="font-weight-bold" data-aos="fade-in"><i class="fas fa-user" ></i>Veronika Jovanovska</p>
+    <p class="font-weight-bold" data-aos="fade-in"><i class="fas fa-map-marker-alt" ></i>Skopje, N.Macedonia</p>
+    <p class="font-weight-bold" data-aos="fade-in"><i class="fas fa-briefcase" ></i>UI / UX Designer</p>
   </div>
 </section>
 <section class="hero-info">
-  <div class="hero-info-text">
+  <div class="hero-info-text" data-aos="fade-up">
     <p>Hello, my name is Veronika Jovanovska.</p>
     <p>
       I am currently a student at The Faculty of computer science and engineering, Ss. Cyril and Methodius University – Skopje. My area of expertise is UX/UI design.
       </p>
     <p>My style of design is very flexible, I can make a clean, elegant and simple web site but also a colorful and creative one. </p>
   </div>
-  <button class="hero-info-btn" (click)="openPDF()">DOWNLOAD RESUME</button>
+  <button class="hero-info-btn" data-aos="fade-up" (click)="openPDF()">DOWNLOAD RESUME</button>
 </section>
-<section class="projects-showcase">
+<section class="projects-showcase" id="projects">
   <div class="cards-section">
-    <div class="custom-card">
+    <div class="custom-card" data-aos="fade-up">
       <div class="card-img-container ">
         <img src="/assets/png-assets/wheelchair.png" alt="wheelchair" class="img-fluid">
       </div>
@@ -28,10 +28,10 @@
         <p class="text-small light-grey">Application</p>
         <h5 class="custom-card-header light-grey">Accessible places for disabled people</h5>
         <p class="light-grey">An app for disabled people - to help them find accessible places easier and make friends along the way</p>
-        <button class="card-text-cta light-grey">View Case Study</button>
+        <button class="card-text-cta light-grey" routerLink="/wheel-friendly">View Case Study</button>
       </div>
     </div>
-    <div class="custom-card">
+    <div class="custom-card" data-aos="fade-up">
       <div class="card-img-container ">
         <img src="/assets/png-assets/museum.png" alt="museum" class="img-fluid">
       </div>
@@ -39,7 +39,7 @@
         <p class="text-small">Website</p>
         <h5 class="custom-card-header">A simple gallery website</h5>
         <p>Clean website of a gallery that is user friendly where you can buy original paintings as well as prints, t-shirts and more.</p>
-        <button class="card-text-cta">View Case Study</button>
+        <button class="card-text-cta" routerLink="/jd-art">View Case Study</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,82 @@
+@import '../../../extras/index';
+
+.wheel-friendly-hero {
+  background-image: url('../../../../assets/png-assets/hero-section-bg-project-one.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 170px;
+  margin-top: 50px;
+  .section-subtitle {
+    margin-bottom: 112px;
+  }
+}
+
+.section-title {
+  i {
+    margin-right: 22px;
+  }
+  font-size: 30px;
+}
+
+.wheel-friendly {
+  max-width: 40%;
+}
+
+.wheel-friendly-info {
+  position: relative;
+}
+
+.project-title,
+.section-title,
+p {
+  font-family: 'Syne', sans-serif;
+  color: getColor(projects-font);
+}
+
+.section-subtitle {
+  font-size: 20px;
+  padding-bottom: 1px;
+  position: relative;
+  display: inline-block;
+  color: getColor(blue-btn);
+}
+
+.section-subtitle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: getColor(blue-btn);
+}
+
+.wheel-friendly-images {
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  .img-container {
+    width: 30%;
+    box-shadow: 3px 3px 12px #758dac;
+    height: fit-content;
+    border-radius: 30px;
+    img.img-fluid {
+      border-radius: inherit;
+    }
+  }
+}
+
+.wheel-friendly-absolute {
+  position: absolute;
+  bottom: 20%;
+  width: 60%;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+section.user-flow-two {
+  padding-top: 113px;
+  background-color: getColor(main-grey);
+}

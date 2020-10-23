@@ -9,3 +9,12 @@
 <footer>
   <app-footer></app-footer>
 </footer>
+
+<div
+  id="back-to-top"
+  [@enterAnimation]
+  *ngIf="offsetTop > 150"
+  (click)="scrollToTop()"
+>
+  <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+</div>
